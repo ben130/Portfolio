@@ -15,8 +15,8 @@ import {
 } from 'react-icons/fa'
 import { 
   SiTypescript, 
-  SiTailwindcss, 
   SiVite,
+  SiC,
   SiCsharp,
   SiCplusplus,
   SiMicrosoftazure,
@@ -32,8 +32,16 @@ import {
   SiMysql,
   SiJquery,
   SiAxios,
-  SiMicrosoftsqlserver
+  SiMicrosoftsqlserver,
+  SiRedis,
+  SiOpenai,
+  SiFastly,
+  SiNuget,
+  SiAuth0,
+  SiBox,
+  SiDotnet
 } from 'react-icons/si'
+import { FaGithub } from 'react-icons/fa'
 import './Skills.css'
 
 interface Skill {
@@ -59,14 +67,14 @@ const Skills = () => {
     {
       title: 'Languages',
       skills: [
-        createSkill('C', null, 75),
+        createSkill('C', <SiC />, 75),
         createSkill('C++', <SiCplusplus />, 80),
-        createSkill('C#', <SiCsharp />, 90),
-        createSkill('Java', <FaJava />, 85),
+        createSkill('C#', <SiCsharp />, 95),
+        createSkill('Java', <FaJava />, 90),
         createSkill('Python', <FaPython />, 85),
         createSkill('JavaScript', <FaJs />, 90),
-        createSkill('TypeScript', <SiTypescript />, 88),
-        createSkill('SQL', null, 85),
+        createSkill('TypeScript', <SiTypescript />, 95),
+        createSkill('SQL', null, 90),
         createSkill('HTML', <FaHtml5 />, 95),
         createSkill('CSS', <FaCss3Alt />, 90),
       ]
@@ -86,37 +94,37 @@ const Skills = () => {
     {
       title: 'Backend & .NET',
       skills: [
-        createSkill('Node.js', <FaNode />, 85),
-        createSkill('ASP.NET', <SiCsharp />, 90),
-        createSkill('.NET Core', <SiCsharp />, 90),
-        createSkill('Entity Framework', null, 85),
-        createSkill('EF Core', null, 85),
-        createSkill('Linq', null, 85),
-        createSkill('ADO.NET', null, 80),
-        createSkill('MySQL', <SiMysql />, 85),
-        createSkill('MS SQL Server', <SiMicrosoftsqlserver />, 85),
+        createSkill('.NET Core', <SiCsharp />, 95),
+        createSkill('ASP.NET', <SiCsharp />, 95),
+        createSkill('Entity Framework (EF Core)', <SiDotnet />, 85),
+        createSkill('Linq', <SiCsharp />, 85),
+        createSkill('ADO.NET', <SiCsharp />, 90),
+        createSkill('MS SQL Server', <SiMicrosoftsqlserver />, 90),
+        createSkill('Redis', <SiRedis />, 70),
+        createSkill('MySQL', <SiMysql />, 80),
+        createSkill('Node.js', <FaNode />, 75),
       ]
     },
     {
       title: 'Cloud & DevOps',
       skills: [
-        createSkill('Microsoft Azure', <SiMicrosoftazure />, 85),
-        createSkill('AWS', <FaAws />, 80),
-        createSkill('Google Cloud', <SiGooglecloud />, 75),
-        createSkill('Docker', <FaDocker />, 85),
-        createSkill('Kubernetes', <SiKubernetes />, 75),
+        createSkill('Microsoft Azure', <SiMicrosoftazure />, 95),
+        createSkill('AWS', <FaAws />, 75),
+        createSkill('Google Cloud', <SiGooglecloud />, 80),
+        createSkill('Docker', <FaDocker />, 95),
+        createSkill('Kubernetes', <SiKubernetes />, 80),
         createSkill('Terraform', <SiTerraform />, 80),
-        createSkill('Fastly CDN', null, 75),
+        createSkill('Fastly CDN', <SiFastly />, 75),
       ]
     },
     {
       title: 'AI/ML Tools',
       skills: [
         createSkill('Cursor', null, 85),
-        createSkill('OpenAI', null, 80),
+        createSkill('OpenAI / ChatGPT', <SiOpenai />, 85),
         createSkill('MCPs', null, 75),
-        createSkill('ChatGPT', null, 85),
-        createSkill('GitHub Copilot', null, 80),
+        createSkill('GitHub Copilot', <FaGithub />, 80),
+        createSkill('ML.NET', <SiDotnet />, 75),
       ]
     },
     {
@@ -124,15 +132,15 @@ const Skills = () => {
       skills: [
         createSkill('Git', <FaGitAlt />, 90),
         createSkill('NPM', <FaNpm />, 90),
-        createSkill('NuGet', null, 85),
+        createSkill('NuGet', <SiNuget />, 90),
+        createSkill('Vite', <SiVite />, 80),
         createSkill('Axios', <SiAxios />, 85),
         createSkill('Stripe', <SiStripe />, 80),
-        createSkill('Auth0 / MSAL', null, 80),
-        createSkill('Twilio', <SiTwilio />, 75),
-        createSkill('Box', null, 75),
+        createSkill('Auth0 / MSAL', <SiAuth0 />, 85),
+        createSkill('Twilio', <SiTwilio />, 80),
+        createSkill('Box', <SiBox />, 75),
         createSkill('Jira', <SiJira />, 85),
-        createSkill('JSON / YAML', <SiJson />, 85),
-        createSkill('Agile/Scrum', null, 85),
+        createSkill('JSON / YAML', <SiJson />, 90)
       ]
     },
   ]

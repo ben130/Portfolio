@@ -1,4 +1,3 @@
-import { ReactNode } from 'react'
 import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa'
 import './Projects.css'
 
@@ -13,28 +12,28 @@ interface Project {
 
 const Projects = () => {
   const projects: Project[] = [
+      {
+        title: 'FlickBase',
+        description: 'A comprehensive movie database platform inspired by IMDB, featuring an intuitive interface to browse, search, and explore an extensive collection of films. Built with a clean, modern design for seamless movie discovery and information retrieval.',
+        tech: ['Angular', 'JSON', 'CSS3', 'GitHub Pages'],
+        github: 'https://github.com',
+        live: 'https://example.com',
+        image: 'project-1'
+      },
     {
-      title: 'E-Commerce Platform',
-      description: 'A full-stack e-commerce solution with payment integration, user authentication, and admin dashboard.',
-      tech: ['React', 'Node.js', 'MongoDB', 'Stripe'],
-      github: 'https://github.com',
-      live: 'https://example.com',
-      image: 'project-1'
-    },
-    {
-      title: 'Task Management App',
-      description: 'A collaborative task management application with real-time updates and team collaboration features.',
-      tech: ['React', 'TypeScript', 'Firebase', 'Tailwind CSS'],
+      title: 'Price Alert API',
+      description: 'A powerful .NET REST API designed to monitor and track product prices across multiple e-commerce websites. Automatically parses HTML content to extract pricing data, stores information in SQL Server, and provides real-time price tracking with Discord integration for instant price drop notifications and alerts.',
+      tech: ['.NET Core', 'SQL Server', 'HTML Parsing', 'Discord API'],
       github: 'https://github.com',
       live: 'https://example.com',
       image: 'project-2'
     },
     {
-      title: 'Weather Dashboard',
-      description: 'A beautiful weather dashboard with location-based forecasts and interactive maps.',
-      tech: ['React', 'API Integration', 'Chart.js', 'CSS3'],
-      github: 'https://github.com',
-      live: 'https://example.com',
+      title: 'Home Lab Infrastructure',
+      description: 'A comprehensive self-hosted infrastructure environment featuring media streaming, network security, virtualization, and monitoring solutions. Built with enterprise-grade tools including Plex for media management, Wireguard VPN for secure remote access, Docker/Portainer for containerization, and Uptime Kuma for system monitoring.',
+      tech: ['Docker', 'VMware', 'Hyper-V', 'Linux', 'Wireguard', 'Plex', 'AdGuard Home', 'Uptime Kuma'],
+      github: '',
+      live: '',
       image: 'project-3'
     },
   ]
@@ -55,24 +54,28 @@ const Projects = () => {
                   <span>{project.image}</span>
                 </div>
                 <div className="project-overlay">
-                  <a 
-                    href={project.github} 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                    className="project-link"
-                    aria-label="GitHub"
-                  >
-                    <FaGithub />
-                  </a>
-                  <a 
-                    href={project.live} 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                    className="project-link"
-                    aria-label="Live Demo"
-                  >
-                    <FaExternalLinkAlt />
-                  </a>
+                  {project.github && (
+                    <a 
+                      href={project.github} 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="project-link"
+                      aria-label="GitHub"
+                    >
+                      <FaGithub />
+                    </a>
+                  )}
+                  {project.live && (
+                    <a 
+                      href={project.live} 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="project-link"
+                      aria-label="Live Demo"
+                    >
+                      <FaExternalLinkAlt />
+                    </a>
+                  )}
                 </div>
               </div>
               <div className="project-content">

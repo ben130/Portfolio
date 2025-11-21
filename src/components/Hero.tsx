@@ -58,7 +58,7 @@ const Hero = () => {
             <a href="https://github.com/ben130" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
               <FaGithub />
             </a>
-            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+            <a href="https://www.linkedin.com/in/benjamin-herrman-1128b6197/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
               <FaLinkedin />
             </a>
             <a href="mailto:benherrman17@gmail.com" aria-label="Email">

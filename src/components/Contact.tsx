@@ -1,5 +1,5 @@
 import { useState, ChangeEvent, FormEvent, ReactNode } from 'react'
-import { FaEnvelope, FaPhone, FaMapMarkerAlt, FaPaperPlane, FaCopy, FaCheck } from 'react-icons/fa'
+import { FaEnvelope, FaMapMarkerAlt, FaPaperPlane, FaCopy, FaCheck } from 'react-icons/fa'
 import './Contact.css'
 
 interface FormData {
@@ -69,7 +69,6 @@ const Contact = () => {
 
   const contactInfo: ContactInfo[] = [
     { icon: <FaEnvelope />, label: 'Email', value: 'benherrman17@gmail.com', link: 'mailto:benherrman17@gmail.com' },
-    { icon: <FaPhone />, label: 'Phone', value: '+1 (555) 123-4567', link: 'tel:+15551234567' },
     { icon: <FaMapMarkerAlt />, label: 'Location', value: 'New Jersey, USA', link: null },
   ]
 
