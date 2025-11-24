@@ -16,8 +16,8 @@ const Projects = () => {
         title: 'FlickBase',
         description: 'A comprehensive movie database platform inspired by IMDB, featuring an intuitive interface to browse, search, and explore an extensive collection of films. Built with a clean, modern design for seamless movie discovery and information retrieval.',
         tech: ['Angular', 'JSON', 'CSS3', 'GitHub Pages'],
-        github: 'https://github.com',
-        live: 'https://example.com',
+        github: 'https://github.com/ben130/Angular-Movie-App',
+        live: 'https://ben130.github.io/Angular-Movie-App/',
         image: 'project-1'
       },
     {
