@@ -45,7 +45,7 @@ const About = () => {
             <div className="image-wrapper">
               <div className="image-glow"></div>
               <div className="placeholder-image">
-                <span><img src="public/headshot.png"/></span>
+                <span><img src="./headshot.png"/></span>
               </div>
             </div>
           </div>
